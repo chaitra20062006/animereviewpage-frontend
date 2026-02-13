@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Fan Page</title>
+  <link rel="stylesheet" href="style(3).css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Anime World</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#shonen">Shonen</a></li>
+        <li><a href="#shojo">Shojo</a></li>
+        <li><a href="#seinen">Seinen</a></li>
+        <li><a href="#comment">Comment</a></li>
+      </ul>
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
+  </header>
+
+  <!-- About Us -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      Welcome to Anime World — a passionate anime fan page where fans unite to celebrate great storytelling, stunning art, and unforgettable characters. Here you can browse top picks across every genre, cast votes for your favorites, and join lively discussions — leave comments, share recommendations, and help shape the community's ranked lists for shōnen, shōjo, seinen, isekai, and more. Whether you're hunting for classics or discovering new hits, OtakuVote is your space to cheer, debate, and vote for the anime that moved you most.
+    </p>
+  </section>
+
+  <!-- Shojo Section -->
+  <section id="shojo" class="section">
+    <h2>Shojo Anime</h2>
+    <div class="anime-list">
+      <div class="anime-item">
+        <img src="HMC.png" alt="HMC">
+        <table>
+          <tr><th>Production House</th><td>Studio Ghibli</td></tr>
+          <tr><th>Year</th><td>2004</td></tr>
+          <tr><th>Director</th><td>Hayao Miyazaki</td></tr>
+          <p>It tells the enchanting tale of Sophie, a young hat maker, and Howl, a mysterious wizard, as they navigate a world of magic and war</p>
+        </table>
+      </div>
+      <div class="anime-item">
+        <img src="DEATH_PARADE.jpg" alt="DEATH_PARADE">
+        <table>
+          <tr><th>Production House</th><td>Madhouse</td></tr>
+          <tr><th>Year</th><td>2016</td></tr>
+          <tr><th>Director</th><td>Kotomi Deai</td></tr>
+          <p>people judged in the afterlife through games that reveal their true nature. It's praised for its emotional depth, engaging characters, and exploration of complex themes about life, death, and human nature</p>
+        </table>
+      </div>
+      <div class="anime-item">
+        <img src="sailor_moon.jpg" alt="sailor moon">
+        <table>
+          <tr><th>Production House</th><td>Toei Animation</td></tr>
+          <tr><th>Year</th><td>1992</td></tr>
+          <tr><th>Director</th><td>Junichi Sato</td></tr>
+          <p>Sailor Moon is a classic anime series known for its magical girl transformations, strong female characters, and engaging storylines that blend action, romance, and coming-of-age themes</p>
+        </table>
+      </div>
+    </div>
+
+    <!-- Poll -->
+    <div class="poll">
+      <h3>Vote for the Best Shojo Anime</h3>
+      <form id="shojoPoll">
+        <label><input type="radio" name="shojoVote" value="HMC"> HMC</label><br>
+        <label><input type="radio" name="shojoVote" value="DEATH_PARADE"> DEATH_PARADE</label><br>
+        <label><input type="radio" name="shojoVote" value="sailor_moon"> sailor_moon</label><br>
+        <button type="button" onclick="submitPoll('shojoPoll')">Submit Vote</button>
+      </form>
+      <p id="shojoPollResult"></p>
+    </div>
+  </section>
+
+  <!-- Shonen Section -->
+  <section id="shonen" class="section">
+    <h2>Shonen Anime</h2>
+    <div class="anime-list">
+      <div class="anime-item">
+        <img src="onepiece.jpg" alt="One Piece">
+        <table>
+          <tr><th>Production House</th><td>Toei Animation</td></tr>
+          <tr><th>Year</th><td>1999</td></tr>
+          <tr><th>Director</th><td>Kōnosuke Uda</td></tr>
+          <p>compelling narrative, engaging characters, and expansive world-building...</p>
+        </table>
+      </div>
+      <div class="anime-item">
+        <img src="naruto.jpg" alt="naruto">
+        <table>
+          <tr><th>Production House</th><td>Pierrot</td></tr>
+          <tr><th>Year</th><td>2002</td></tr>
+          <tr><th>Director</th><td>Hayato Date</td></tr>
+          <p> engaging storyline, character development, and themes of perseverance...</p>
+        </table>
+      </div>
+      <div class="anime-item">
+        <img src="jjk.jpg" alt="jjk">
+        <table>
+          <tr><th>Production House</th><td>Mappa</td></tr>
+          <tr><th>Year</th><td>2020</td></tr>
+          <tr><th>Director</th><td>Sunghoo Park</td></tr>
+          <p>It features strong character development, dynamic animation...</p>
+        </table>
+      </div>
+    </div>
+    <div class="poll">
+      <h3>Vote for the Best Shonen Anime</h3>
+      <form id="shonenPoll">
+        <label><input type="radio" name="shonenVote" value="Onepiece"> Onepiece</label><br>
+        <label><input type="radio" name="shonenVote" value="Naruto"> Naruto</label><br>
+        <label><input type="radio" name="shonenVote" value="jjk"> jjk</label><br>
+        <button type="button" onclick="submitPoll('shonenPoll')">Submit Vote</button>
+      </form>
+      <p id="shonenPollResult"></p>
+    </div>
+  </section>
+
+  <!-- Seinen Section -->
+  <section id="seinen" class="section">
+    <h2>Seinen Anime</h2>
+    <div class="anime-list">
+      <div class="anime-item">
+        <img src="trigun.jpg" alt="trigun">
+        <table>
+          <tr><th>Production House</th><td>Madhouse</td></tr>
+          <tr><th>Year</th><td>1998</td></tr>
+          <tr><th>Director</th><td>Shinichirō Watanabe</td></tr>
+          <p>Trigun is a highly regarded anime...</p>
+        </table>
+      </div>
+      <div class="anime-item">
+        <img src="steins_gate.png" alt="steins gate">
+        <table>
+          <tr><th>Production House</th><td>White Fox</td></tr>
+          <tr><th>Year</th><td>2011</td></tr>
+          <tr><th>Director</th><td>Hiroshi Hamasaki</td></tr>
+          <p>Steins;Gate is a highly acclaimed anime...</p>
+        </table>
+      </div>
+      <div class="anime-item">
+        <img src="hunteXhunter.png" alt="hunteXhunter">
+        <table>
+          <tr><th>Production House</th><td>Madhouse</td></tr>
+          <tr><th>Year</th><td>2011</td></tr>
+          <tr><th>Director</th><td>Tetsurō Araki</td></tr>
+          <p>Hunter x Hunter is a highly acclaimed anime...</p>
+        </table>
+      </div>
+    </div>
+    <div class="poll">
+      <h3>Vote for the Best Seinen Anime</h3>
+      <form id="seinenPoll">
+        <label><input type="radio" name="seinenVote" value="trigun"> trigun</label><br>
+        <label><input type="radio" name="seinenVote" value="STEINS GATE"> steins_gate</label><br>
+        <label><input type="radio" name="seinenVote" value="hunteXhunter"> HunterXhunter</label><br>
+        <button type="button" onclick="submitPoll('seinenPoll')">Submit Vote</button>
+      </form>
+      <p id="seinenPollResult"></p>
+    </div>
+  </section>
+
+  <!-- Comment Section -->
+  <section id="comment" class="section">
+    <h2>Leave a Comment</h2>
+    <form id="commentForm">
+      <input type="text" id="username" placeholder="Your Name" required>
+      <textarea id="usercomment" placeholder="Your Comment" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="commentsList"></div>
+  </section>
+
+  <script src="empty(1).js"></script>
+</body>
+</html>
+
+ 
